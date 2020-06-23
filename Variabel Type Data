@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+	char nama[100];
+	string nim;
+	int usia;
+	float beratBadan;
+	double tinggiBadan;
+	
+	cout << "BERIKUT INI ADALAH DATA PRIBADI YANG AKAN ANDA MASUKKAN" << endl;
+	cout << "MASUKKAN DATA TANPA MEMBERI KETERANGAN DI BELAKANGNYA" <<endl;
+	cout << "Nama Anda		: ";
+	cin.getline (nama, 100);
+	cout << "NIM Anda		: ";
+	cin >>  nim;
+	cout << "Usia Anda di Tahun ini	: ";
+	cin >> usia;
+	cout << "Berat Badan		: ";
+	cin >> beratBadan;
+	cout << "Tinggi Badan		: ";
+	cin >> tinggiBadan;
+	cout << endl;
+	
+	bool a, b;
+	a = beratBadan >= 50;
+	b = beratBadan < 50;
+	if (a)
+	{
+		cout << "Data yang Anda masukkan sudah kami terima" << endl <<  endl;
+		cout << "ANDA BISA MENDOONORKAN DARAH ANDA" << endl;
+	}
+	if (b)
+	{
+		cout << "Data yang Anda masukkan sudah kami terima"  << endl << endl;
+		cout << "MOHON MAAF" << endl;
+		cout << "BB Anda Belum Memenuhi Syarat Untuk Mendonorkan Darah" <<  endl;
+	}
+	return 0;
+}
